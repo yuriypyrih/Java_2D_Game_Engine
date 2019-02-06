@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.util.Random;
 
-import engine.PlayerInput.Move;
+import engine.MouseInput.Move;
 
 public class Game extends Canvas implements Runnable{
 
@@ -37,11 +37,11 @@ public class Game extends Canvas implements Runnable{
 		this.addMouseListener(menu);
 		this.addMouseMotionListener(menu);
 		
-		PlayerInput player = new PlayerInput(handler);
-		PlayerInput.Move move = player.new Move();
+		MouseInput player = new MouseInput(handler);
+		MouseInput.Move move = player.new Move();
 		this.addMouseMotionListener(move);
 		
-		PlayerInput.Click click = player.new Click();
+		MouseInput.Click click = player.new Click();
 		this.addMouseListener(click);
 	
 		 new Window(WIDTH, HEIGHT,"Game",this); 

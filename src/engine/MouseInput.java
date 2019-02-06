@@ -4,12 +4,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public  class PlayerInput {
+public  class MouseInput {
 	
 	private Handler handler;
 
 
-	public PlayerInput(Handler handler) {
+	public MouseInput(Handler handler) {
 		
 		this.handler = handler;
 	
