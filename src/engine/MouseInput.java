@@ -38,8 +38,6 @@ public  class MouseInput {
 
 		@Override
 		public void mousePressed(MouseEvent e) {}
-			
-		
 
 		@Override
 		public void mouseReleased(MouseEvent e) {}
@@ -56,9 +54,9 @@ public  class MouseInput {
 				return false;
 			}
 		}else return false;
-	}//end of mouseOver()
+	}
 	
 	
 	
 	
-}//end of class PlayerInput
+}
